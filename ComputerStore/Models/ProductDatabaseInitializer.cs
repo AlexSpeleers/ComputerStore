@@ -54,7 +54,7 @@ namespace ComputerStore.Models
 					Description = "Gaming laptops engineered with " +
 					"NVIDIA® GeForce® discrete graphics, 8th Gen Intel® processors " +
 					"and a thin design for a sleek gaming experience.",
-					ImagePath="LightLaptop.png",
+					ImagePath="dell G3.jpg",
 					UnitPrice = 799.99,
 					CategoryID = 1
 			   },
@@ -65,7 +65,7 @@ namespace ComputerStore.Models
 					Description = "15-Inch gaming laptop with " +
 					"stunning visuals powered by NVIDIA® GeForce® GTX 1060 graphics" +
 					" and the latest 8th Gen Intel® Quad-and-Hex Core™ CPUs.",
-					ImagePath="PC.png",
+					ImagePath="dell G5.jpg",
 					UnitPrice = 949.99,
 					 CategoryID = 1
 			   },
@@ -76,7 +76,7 @@ namespace ComputerStore.Models
 					Description = "15-Inch gaming laptop designed for a powerful, " +
 					"immersive in-game experience featuring NVIDIA® GeForce® GTX 1060 graphics " +
 					"and the latest 8th Gen Intel® Quad-and-Hex Core™ CPUs, up to i9.",
-					ImagePath="PS4.png",
+					ImagePath="dell G7.jpg",
 					UnitPrice = 1099.99,
 					CategoryID = 1
 				},
@@ -87,7 +87,7 @@ namespace ComputerStore.Models
 					Description = "Designed for VR and engineered " +
 					"with liquid cooling and tool-less access, " +
 					"the Alienware Aurora was built to get you deeper in the game.",
-					ImagePath="planeace.png",
+					ImagePath="dell Aurora.jpg",
 					UnitPrice = 999.99,
 					CategoryID = 2
 				},
@@ -96,7 +96,7 @@ namespace ComputerStore.Models
 					ProductID = 5,
 					ProductName = "Area 51",
 					Description = "Gaming desktop with iconic, innovative design, and tuned for ultimate performance.",
-					ImagePath="planeglider.png",
+					ImagePath="dell Area 51.jpg",
 					UnitPrice = 1969.99,
 					CategoryID = 2
 				},
@@ -106,7 +106,7 @@ namespace ComputerStore.Models
 					ProductName = "Area 51 Threadripper",
 					Description = "Dominate the game with unbeatable performance" +
 					" and world-bending graphics options on the redesigned Alienware Area-51 Threadripper.",
-					ImagePath="planepaper.png",
+					ImagePath="dell Area 51 Threadripper.jpg",
 					UnitPrice = 2819.99,
 					CategoryID = 2
 				},
@@ -115,7 +115,7 @@ namespace ComputerStore.Models
 					ProductID = 7,
 					ProductName = "PlayStation 4",
 					Description = "1TB hard drive.",
-					ImagePath="planeprop.png",
+					ImagePath="PS4.jpg",
 					UnitPrice = 299.99,
 					CategoryID = 3
 				},
@@ -125,7 +125,7 @@ namespace ComputerStore.Models
 					ProductName = "PS4 Pro",
 					Description = "PS4 Pro outputs gameplay to your 4K TV." +
 					"Turn on Boost Mode to give PS4 games access to the increased power of PS4 Pro. ",
-					ImagePath="truckearly.png",
+					ImagePath="PS4 PRO.jpg",
 					UnitPrice = 399.99,
 					CategoryID = 3
 				},
@@ -135,7 +135,7 @@ namespace ComputerStore.Models
 					ProductName = "Xbox One S",
 					Description = "Gear up with Xbox 1TB accessories: Xbox One Play & Charge Kit \nXbox Elite Wireless Controller " +
 					"\nXbox Design Lab",
-					ImagePath="truckfire.png",
+					ImagePath="XBOX One S.jpg",
 					UnitPrice = 299.00,
 					CategoryID = 4
 				},
@@ -145,7 +145,7 @@ namespace ComputerStore.Models
 					ProductName = "Xbox One X",
 					Description = "Gear up with Xbox 1TB accessories: Xbox One Play & Charge Kit \nXbox Elite Wireless Controller " +
 					"\nXbox Design Lab",
-					ImagePath="truckbig.png",
+					ImagePath="XBOX One X.jpg",
 					UnitPrice = 499.00,
 					CategoryID = 4
 				},
@@ -156,7 +156,7 @@ namespace ComputerStore.Models
 					Description = "This bundle includes the Nintendo Switch console" +
 					" and Nintendo Switch dock in black, and left and right Joy‑Con controllers" +
 					" in a contrasting gray. It also includes all the extras you need to get started.",
-					ImagePath="boatbig.png",
+					ImagePath="Nintendo Switch Grey.jpg",
 					UnitPrice = 299.00,
 					CategoryID = 5
 				},
@@ -167,7 +167,7 @@ namespace ComputerStore.Models
 					Description = "This bundle includes the Nintendo Switch console " +
 					"and Nintendo Switch dock in black, with contrasting left and right " +
 					"Joy‑Con controllers—one red, one blue. It also includes all the extras you need to get started.",
-					ImagePath="boatpaper.png",
+					ImagePath="Nintendo Switch Blue&Red.jpg",
 					UnitPrice = 299.00,
 					CategoryID = 5
 				}

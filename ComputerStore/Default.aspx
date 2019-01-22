@@ -4,8 +4,7 @@
 
     <h1><%: Title %>.</h1>
     <h2>ComputerStore - choose what you prefer.</h2>
-    <p class="lead">We're all about transportation toys. You can order 
-                any of our toys today. Each toy listing has detailed 
-                information to help you choose the right toy.</p>
+    <p class="lead">You are in few clicks to buy what you like. Delivery
+        accessible in any country. </p>
 
 </asp:Content>
