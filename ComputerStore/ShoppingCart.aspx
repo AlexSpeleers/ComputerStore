@@ -5,7 +5,7 @@
     <!--таблиця  bind shopcart from db to the gridview-->
     <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="Vertical" CellPadding="4"
         ItemType="ComputerStore.Models.CartItem" SelectMethod="GetShoppingCartItems" 
-        CssClass="table table-striped table-bordered" >   <!--вертає список об'єктів CartItem-->
+        CssClass="table table-striped table-bordered" >
         <Columns>
          <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" />        
          <asp:BoundField DataField="Product.ProductName" HeaderText="Name" />        

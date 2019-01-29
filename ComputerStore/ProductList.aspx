@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="ComputerStore.ProductList" %>
+﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="ComputerStore.ProductList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <section>
         <div>
@@ -46,6 +46,11 @@
                                         <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
+                                    <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
+                                        <span class="ProductListItem">
+                                            <b>Add To Cart<b>
+                                        </span>           
+                                    </a>
                                 </td>
                             </tr>
                             <tr>

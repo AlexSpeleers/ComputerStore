@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="ComputerStore.ProductDetails" %>
+﻿<%@ Page Title="Product Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="ComputerStore.ProductDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <asp:FormView ID="productDetail" runat="server" ItemType="ComputerStore.Models.Product" SelectMethod ="GetProduct" RenderOuterTable="false">
         <ItemTemplate>
@@ -13,7 +13,13 @@
                     </td>
                     <td>&nbsp;</td>  
                     <td style="vertical-align: top; text-align:left;">
-                        <b>Description:</b><br /><%#:Item.Description %><br /><span><b>Price:</b>&nbsp;<%#: String.Format("{0:c}", Item.UnitPrice) %></span><br /><span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span><br /></td>
+                        <b>Description:</b><br /><%#:Item.Description %>
+                        <br />
+                        <span><b>Price:</b>&nbsp;<%#: String.Format("{0:c}", Item.UnitPrice) %></span>
+                        <br />
+                        <span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span>
+                        <br />
+                    </td>
                 </tr>
             </table>
         </ItemTemplate>
