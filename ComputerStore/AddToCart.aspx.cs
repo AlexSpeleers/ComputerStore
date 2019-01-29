@@ -22,7 +22,7 @@ namespace ComputerStore
 					//визиває метод AddToCart коли створено екземпляр корзини
 					//після добавлення продукту у корзину, ця стрінка перенаправляє до ShoppingCart.aspx,
 					//з оновленою інфою
-					usersShoppingCart.AddToCart(Convert.ToInt16(rawId));
+					usersShoppingCart.AddToCart(productId);
 				}
 			}
 

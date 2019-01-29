@@ -6,7 +6,7 @@ using ComputerStore.Models;
 
 namespace ComputerStore.Logic
 {
-	public class ShoppingCartActions
+	public class ShoppingCartActions : IDisposable
 	{
 		public string ShoppingCartId { get; set; }
 
