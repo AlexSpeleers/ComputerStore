@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using ComputerStore.Models;
+using ComputerStore.Logic;
 
 namespace ComputerStore
 {
@@ -73,6 +74,17 @@ namespace ComputerStore
         {
 
         }
+
+		//івент Page_PreRender викликається до того як відробразиться хтмл сторінка
+		//GetCount метод вертає рахунок за товари у корзині, якщо вони є.
+		protected void Page_PreRender(object sender, EventArgs e)
+		{
+			using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+			{
+				string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
+				cartCount.InnerText = cartStr;
+			}
+		}
 
 		public IQueryable<Category> GetCategories()
 		{
