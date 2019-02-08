@@ -215,5 +215,17 @@ namespace ComputerStore.Logic
 			public int PurchaseQuantity;
 			public bool RemoveItem;
 		}
+		//метод MigrateCart використовує існуючий cartId щоби знайти корзину користувача
+		//пробігає через усі CartItem в shoppingCart і заміняє CartId на userName.
+		public void MigrateCart(string cartId, string userName)
+		{
+			var shoppingCart = _db.ShoppingCartItems.Where(c => c.CartId == cartId);
+			foreach (CartItem item in shoppingCart)
+			{
+				item.CartId = userName;
+			}
+			HttpContext.Current.Session[CartSessionKey] = userName;
+			_db.SaveChanges();
+		}
 	}
 }

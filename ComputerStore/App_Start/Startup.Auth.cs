@@ -59,11 +59,11 @@ namespace ComputerStore
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+				ClientId = "000000000000.apps.googleusercontent.com",
+				ClientSecret = "00000000000"
+			});
         }
     }
 }
