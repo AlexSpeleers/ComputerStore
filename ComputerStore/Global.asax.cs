@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using ComputerStore.Models;
+using ComputerStore.Logic;
 
 namespace ComputerStore
 {
@@ -21,6 +22,10 @@ namespace ComputerStore
 
 			// Initialize the product database.
 			Database.SetInitializer(new ProductDatabaseInitializer());
+
+			//власний користувач та роль
+			RoleActions roleActions = new RoleActions();
+			roleActions.AddUserAndRole();
 		}
     }
 }

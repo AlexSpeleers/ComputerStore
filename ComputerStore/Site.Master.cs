@@ -72,8 +72,11 @@ namespace ComputerStore
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
+			if (HttpContext.Current.User.IsInRole("canEdit"))
+			{
+				adminLink.Visible = true;
+			}
+		}
 
 		//івент Page_PreRender викликається до того як відробразиться хтмл сторінка
 		//GetCount метод вертає рахунок за товари у корзині, якщо вони є.

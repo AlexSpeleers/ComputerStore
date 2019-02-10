@@ -27,6 +27,7 @@
             <a class ="navbar-brand"><img src="Images/logo.png" width="50" height="50"></a>
                 <span class="navbar-text">CS</span>
                  <ul class="navbar-nav">
+                    <li><a runat="server" id="adminLink" visible="false" href="~/Admin/AdminPage">Admin</a></li>
                     <li class="nav-item"><a runat="server" class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a runat="server" class="nav-link" href="~/About">About</a></li>
                     <li class="nav-item"><a runat="server" class="nav-link" href="~/Contact">Contact</a></li>
