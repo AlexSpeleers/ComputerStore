@@ -14,7 +14,7 @@ namespace ComputerStore
 {
     public class Global : HttpApplication
     {
-        void Application_Start(object sender, EventArgs e)
+         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -26,6 +26,10 @@ namespace ComputerStore
 			//власний користувач та роль
 			RoleActions roleActions = new RoleActions();
 			roleActions.AddUserAndRole();
+
+			//добавляєм шляхи
+			RouteActions.RegisterCustomRoutes(RouteTable.Routes);
+
 		}
     }
 }
